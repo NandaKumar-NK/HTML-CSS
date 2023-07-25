@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>signUp</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="signup_page.css">
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+
+<body>
+    <div class="container" >
+        <div class="header">
+            <h2>CREATE ACCOUNT</h2>
+        </div>
+        <form class="form" id="form">
+            <div class="form-control" >
+                <label>UserName</label>
+                <input type="text" placeholder="UserName" id="username">
+                <!-- <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i> -->
+                <small>Invalid Username</small>
+            </div>
+            <div class="form-control" >
+                <label>Email</label>
+                <input type="email" placeholder="Email" id="email">
+                <!-- <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i> -->
+                <small>Invalid username</small>
+            </div>
+            <div class="form-control" >
+                <label>Password</label>
+                <input type="password" placeholder="Password" id="password">
+                <!-- <iclass="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>< -->
+                <small>Invalid Password</small>
+            </div>
+            <div class="form-control" >
+                <label>Confirm Password</label>
+                <input type="password" placeholder="Confirm Password" id="password2">
+                <!-- <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i> -->
+                <small>Not Same As Password</small>
+            </div>
+                <button >Submit</button>
+        </form>
+    </div>
+
+    <script>
+        const form=document.getElementById("form")
+        const username=document.getElementById("username")
+        const email=document.getElementById("email")
+        const password=document.getElementById("password")
+        const password2=document.getElementById("password2")
+
+        form.addEventListener('submit',e=>{
+            e.preventDefault();
+            checkInput();
+        });
+
+        function checkInput()
+        {
+            const usernameValue=username.value.trim();
+            const emailValue=email.value.trim();
+            const passwordValue=password.value.trim();
+            const password2Value=password2.value.trim();
+
+            if (usernameValue === ''){
+                setError(username, 'Username Cannot Be Blank');
+            }
+            else{
+                setSuccess(username);
+            }
+        
+            if (emailValue === ''){
+                setError(emailValue, 'emailValue Cannot Be Blank');
+            }
+            else if(!isEmail(emailValue)){
+                setError(emailValue, 'Inavalid Email');
+            }
+            else{
+                setSuccess(emailValue);
+            }
+        
+            
+
+
+            if (passwordValue === ''){
+                setError(passwordValue, 'password Cannot Be Blank');
+            }
+            else{
+                setSuccess(PasswordValue);
+            }
+
+            
+            if (password2Value === ''){
+                setError(password2Value, 'password  Cannot Be Blank');
+            }
+            else if(passwordValue !== password2Value ){
+                setError(password2Value, 'Not Same As The Password')                
+            }
+            else{
+                setSuccess(Password2Value);
+            }
+
+            
+        }
+
+            function setError(input, message){
+                const formControl=input.parentElement;  
+                const small=formControl.querySelector('small');
+                formControl.className='form-control error';
+                small.innerText=message
+            }
+ 
+            function setSuccess(input){
+                const formControl = input.parentElement;
+                formControl.className = 'form-control success'
+            }
+            
+            
+    </script>
+
+
+
+</body>
+
+</html>

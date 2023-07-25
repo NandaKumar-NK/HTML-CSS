@@ -1,0 +1,145 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+}
+.cal{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: 30vw;
+    grid-template-rows: repeat(3,10vh) 5vh repeat(2,10vh);
+    grid-gap: 10px;
+    
+}
+body{
+    background: white;
+}
+header img{
+    width: 250px;
+    height:150px;
+    
+    float: left;
+    display: inline;
+  }
+  
+  
+  header{
+     
+      display: inline-block;
+      background-color: black;
+      width: 100%;
+      height: 200px;
+      
+  
+  }
+  .container{
+      max-width: 1100px;
+      height: 75px;
+  }
+  .container h1{
+    color: black;
+  }
+   .title h1{
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(226, 234, 11);
+    display: inline-block;
+    padding-top: 4%;
+    position: absolute;
+    text-align: left;
+    padding-left: 40px;
+    
+  
+  }
+  nav{
+    background-color: rgb(215, 199, 21);
+    width: 100%;
+    overflow: hidden;
+  
+  }
+  .about ul{
+    list-style: none;
+    float: right;
+  }
+  .about ul li {
+    color: black;
+    float: left;
+    padding: 20px;
+    
+  }
+  .about ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    display: inline;
+   
+    
+  }
+  .about ul li a:hover{
+  
+    padding: 3px;
+  }
+
+
+
+.submit-btn{
+  
+    background-color: turquoise;
+}
+.bmi-value{
+    background-color: yellow;
+    display: grid;
+    grid-template-rows: 50% 50%;
+   
+}
+.status{
+    background-color:gold;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    text-align: center;
+    
+}
+.container > div{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    border-radius: 10px;
+}
+button,input{
+    min-width: 100%;
+    min-height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.5vw;
+    border-radius: 8px;
+}
+input{
+    background: lightcyan;
+    text-indent: 0.5em;
+    max-width:100% ;
+    color: black;
+    outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+button{
+    background: tomato;
+    cursor: pointer;
+}
+button:hover{
+    background: #c70039;
+    color: white;
+}
+.chart{
+    display: inline;
+    float: right;
+}

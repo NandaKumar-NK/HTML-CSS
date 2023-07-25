@@ -1,0 +1,30 @@
+
+div.gmaillink{
+   color: black;
+   position: absolute;
+   right: 30px;
+  
+}
+.logo{
+    position: relative;
+    left: 37%;
+    top: 150px;
+}
+.search_spz{
+    position: absolute;
+    height: 60px;
+    width: 75%;
+    top: 150;
+}
+.country,.about{
+    position: absolute;
+    top:650px;
+    color: black;
+    background-color: dimgrey;
+
+
+}
+.g_s{
+    position: relative;
+    top:50px;
+}

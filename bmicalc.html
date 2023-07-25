@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bmicalc.css">
+    <script src="./bmi.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./images/gym-logo.png" >
+            </div>
+            <div class="title">
+                <h1> Start your fitness journey </h1>
+            </div>
+            
+        </div>
+      </header>
+      <nav>
+       <div class="about">
+        <ul>
+            <li><a href="phots.html">images</a></li>
+            <li><a href="bmicalc.html" >BMI Calculator</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+       </div>
+      </nav><hr>
+    <div class="container">  
+        <div>
+        <h1>BMI Calculator</h1></div>
+        <div class="cal">
+        <label>
+            <input id="h-input" type="number" placeholder="Enter Your Height in Centimeters: ">
+        </label>        
+        <label>
+            <input id="w-input" type="number" placeholder="Enter Your Weight in Kilogrames: ">
+        </label>            
+        <button type="submit" onclick="Calculate()">Calculate BMI</button>
+            
+        <div class="bmi-value">
+            <h4>BMI Value: </h4>
+            <div id="bmi-output"></div>
+        </div>
+        <div class="status">
+            <h4>Status: </h4>
+            <div id="bmi-status"></div>
+            <div class="chart">
+                <img src="./images/BMI-Categories.png" alt="">
+            </div>
+        </div>
+          
+    </div> 
+    </div>
+   
+    
+</body>
+</html>

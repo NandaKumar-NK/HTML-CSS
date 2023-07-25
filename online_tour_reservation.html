@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="online_tour_reservation.css">
+        <script href="online_tour_reservation.js"></script>
+        <title>Online Tour Package Reservation</title>
+    </head>
+    <body>
+        <h1>Online Tour Package Reservation</h1>
+        <table class="table_1">
+            
+            <tr>
+                <td>
+                    <label for="name">Customer Name</label></td>
+                    <td>
+                    <input type="text" id="name" placeholder="Customer Name" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="mobileNumber">Mobile Number</label></td>
+                    <td>
+                    <input type="text" id="mobileNumber" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="aadharNumber">Aadhar Number</label></td>
+                    <td>
+                    <input type="text" id="aadharNumber" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dateOfCheckin">Date of Check-in</label></td>
+                    <td>
+                    <input type="date" id="dateOfCheckin" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="packageType">Package Type</label></td>
+                    <td>
+                    <select name="packages" id="packageType">
+                        <option value="opt1">1 Night&2 Days</option>
+                        <option value="opt2">2 Night&3 Days</option>
+                        <option value="opt3">3 Night&4 Days</option>
+                        <option value="opt4">4 Night&5 Days</option>
+                        <option value="opt5">5 Night&6 Days</option>
+                      </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="adults">Number Of Adults</label></td>
+                    <td>
+                    <input type="text" id="adults" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="children">Number Of Children</label></td>
+                    <td>
+                    <input type="text" id="children" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="paymentMode">Payment Mode</label></td>
+                    <td>
+                    <input type="radio" id="cc" name="paymentMode" value="cc">
+                      <label for="cc">CC</label>
+                    <input type="radio" id="dc" name="paymentMode" value="dc">
+                      <label for="dc">DC</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="cardNumber">Card Number</label></td>
+                    <td>
+                    <input type="text" id="cardNumber" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="cvvNumber">CVV Number</label></td>
+                    <td>
+                    <input type="text" id="cvvNumber" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="buttons" colspan="2">
+                    <button type="submit" onclick="reservationTourPackage()">Pay</button>
+                    <button type="reset" href="#">Clear</button>
+                  
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                   <div> <p id="result"></p></div>
+                </td>
+            </tr>
+            
+        </table>
+        <p id="title">Tour Package Details</p>
+        <div >
+            
+        <table class="table_2" >
+            
+            <tr>
+                <td><span>Package Type</span></td>
+                <td><span>Change Per Type(in Rs.)</span></td>
+                <td><span>No of Visitors Allowed</span></td>
+                <td><span>Extra 1 Person Charges(in Rs.)</span></td>
+            </tr>
+            <tr>
+                <td><span> Night& 2 Days</span></td>
+                <td><span>11,000</span></td>
+                <td><span>2</p></span>
+                <td><span>3,000</span></td>
+            </tr>
+            <tr>
+                <td><span>2 Night& 3 Days</span></td>
+                <td><span>20,000</span></td>
+                <td><span>3</span></td>
+                <td><span>3,500</span></td>
+            </tr>
+            <tr>
+                <td><span>3 Night& 4 Days</span></td>
+                <td><span>29,000</span></td>
+                <td><span>3</span></td>
+                <td><span>3,500</span></td>
+            </tr>
+            <tr>
+                <td><span>4 Night& 5 Days</span></td>
+                <td><span>37,000</span></td>
+                <td><span>4</span></td>
+                <td><span>4,000</span></td>
+            </tr>
+            <tr>
+                <td><span>5 Night& 6 Days</span></td>
+                <td><span>45,000</span></td>
+                <td><span>4</span></td>
+                <td><span>4,000</span></td>
+            </tr>
+        </table>
+    </div>
+        
+    </body>
+</html>

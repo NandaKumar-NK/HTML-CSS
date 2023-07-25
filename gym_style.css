@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    /* border: 1px; */
+    /* padding: 1px; */
+    box-sizing: border-box;
+   
+}
+  header img{
+  width: 250px;
+  height:150px;
+  
+  float: left;
+  display: inline;
+}
+
+
+header{
+   
+    display: inline-block;
+    background-color: black;
+    width: 100%;
+    height: 200px;
+    
+
+}
+.container{
+    max-width: 1100px;
+    height: 75px;
+}
+ h1{
+  font-size: 35px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(226, 234, 11);
+  display: inline-block;
+  padding-top: 4%;
+  position: absolute;
+  text-align: left;
+  padding-left: 40px;
+
+}
+nav{
+  background-color: rgb(215, 199, 21);
+  width: 100%;
+  overflow: hidden;
+
+}
+.about ul{
+  list-style: none;
+  float: right;
+}
+.about ul li {
+  color: black;
+  float: left;
+  padding: 20px;
+  
+}
+.about ul li a{
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+  display: inline;
+ 
+  
+}
+.about ul li a:hover{
+  background-color: gray;
+  padding: 3px;
+}
+article{
+  margin: 0;
+  padding: 0;
+  height: 5hv;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+  
+}
+.slider{
+  width: 100%;
+  height: 500px;
+  border-radius: 1px;
+  overflow: hidden;
+  
+}
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+  padding-top: 0;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width:100%;
+  height: 500px;
+}
+
+.navigation-mannual{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+  padding-left: 40%;
+}
+
+.mannual-btn{
+  border: 2px solid #ccc;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.mannual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.mannual-btn:hover{
+  background-color: #ccc;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+/* Automatic Navigation */
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+  padding-left: 40%;
+}
+
+.navigation-auto div{
+  border: 2px solid #333;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~.navigation-auto .auto-btn-1{
+  background: #ccc;
+}
+
+#radio2:checked ~.navigation-auto .auto-btn-2{
+  background: #ccc;
+}
+
+
+#radio3:checked ~.navigation-auto .auto-btn-3{
+  background: #ccc;
+}
+
+#radio4:checked ~.navigation-auto .auto-btn-4{
+  background: #ccc;
+}
+.msg{
+ 
+  width: 100%;
+  height: 250px;
+  text-align: center;
+ 
+}
+.msg #one_qot{
+  color: black;
+  text-align: center;
+  font-size: 75px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-top: 15px;
+  font-weight: 100;
+  flex-wrap: wrap;
+
+}
+.msg #two_qot{
+  padding-top: 20px;
+  color:#ffe400;
+  text-align: center;
+  font-size: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif; 
+ 
+}
+.opt{
+  
+  height: 550px;
+  background-color:white;
+  padding: 20px;
+  display: inline-block;
+  width: 100%;
+  margin: auto;
+  justify-content:flex-start;
+  flex-direction: row;
+  position: relative;
+  z-index: 1;
+}
+
+
+.col-opt {
+ 
+  width: 33.33%;
+  height: 500px;
+  padding: 15px;
+  float: left;
+  display: flex;
+  z-index: 2;
+  box-sizing: border-box;
+  border-radius: 20px;
+  filter: drop-shadow(0 0 6.5px rgba(0,0,0,.11));
+  
+  
+}
+.opt img{
+  width: 350px;
+  height: 450px;
+  padding: 30px;
+  
+ 
+
+  
+}
+
+.opt span{
+  width: 100%;
+  position: absolute;
+  /* display: inline-block; */
+  padding-left: 22%;
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+ display:block;
+  
+
+}
+/*
+#ig-opt1{
+ flex-direction: column;
+
+ 
+} 
+#ig-opt2{
+flex-direction: column;
+}
+#ig-opt3{
+  flex-direction: column;
+}*/
+ .opt #ig-opt1:hover{
+
+  transition: all ;
+  margin-top: -10px;
+}
+.opt #ig-opt2:hover{
+  transition: all ;
+  margin-top: -10px;
+}
+.opt #ig-opt3:hover{
+ 
+  transition: all ;
+  margin-top: -10px;
+}
+footer{
+  width: 100%;
+  height:150px;
+  background-color: black;
+}

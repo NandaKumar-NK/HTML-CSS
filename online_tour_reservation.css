@@ -1,0 +1,53 @@
+h1{
+    color: #ff0000;
+    font: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+#result{
+    font-size: 15px;
+}
+table {
+    background-color: #77f8aa;
+    margin-left: 35%;
+   
+
+
+}
+tr,td{
+    border: 3px soild black;
+    border-width: 5%;
+    border-style: solid;
+    padding: 5px;
+   
+}
+.buttons{
+    text-align: center;
+}
+.table_2{
+    background-color: #77f8aa;
+    width: 400px;
+   margin-left: 70%;
+   margin-top:-170px ;
+   height: 300px;
+
+}
+
+ 
+span {
+    color: #d03090;
+    font: bold;
+    font-style: italic;
+    text-align: center;
+}    
+#title{
+    
+    position: relative;
+    left: 1150px;
+    top: -160px;
+    color: #d03090;
+    font: bold;
+    font-style: italic;
+    width: 150px;
+}

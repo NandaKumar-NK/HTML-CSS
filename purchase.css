@@ -1,0 +1,40 @@
+body{
+    background-image: url(./images/blue.png) ;
+    
+    font-weight: bold;
+    scr: none;
+}
+h3{
+    color: #ffffff;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+table,tr,td,th{
+    width: 50%;
+    border: 1px solid #08088a;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 7px;
+    color: #08088a;
+    background-color:#ffffff ;
+}
+#sd_32,#sd_pd,#sony,#Mpow,#spk{
+    float: left;
+}
+#submit_btn{
+    color: #08088a;
+    font-weight: bold;
+    margin-left: 45%;
+    margin-top: 15px;
+   
+
+}
+
+#name,#no,#email, #addr{
+    width: 98%;
+}
+p{
+    color: white;
+    text-align: center;
+}
